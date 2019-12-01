@@ -12,6 +12,11 @@ export class HomeComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    // this.activatedRoute.params.subscribe((sss) => {
+    //   this.data = sss;
+      // console.log('this.date from home......', this.data);
+      this.data = JSON.parse(localStorage.getItem('calculatedData')); // pulls data from contact.component.ts line 77
+    // });
 
   }
 

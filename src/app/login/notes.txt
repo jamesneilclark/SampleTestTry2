@@ -1,0 +1,28 @@
+
+---------------Github-------------------
+    - Clone down test
+    - Create new repo
+    - Remove then add the new origin
+    - Branch off of master to make development
+        - Push
+    - Branch off of development to make exam-start
+        - Push
+
+
+
+
+---------------CODE-------------------
+    - Login Component
+        - Set up click event with login(user) in HTML
+        - Declare user in .ts which is an empty object of type any
+            user: any = {};
+        - Bind input in HTML
+            - [(ngModel)] = “user.username”
+            - [(ngModel)] = “user.password”
+        - Create login() in .ts
+            - Login(user: any) {}
+            - User console.log if you want for verification
+        - Make interface in login.ts
+            - Change user types to of IUser
+        - create login credentials inside login()
+            const presetUser = { username: 'jimmy', password: 'jc123' };
