@@ -95,4 +95,29 @@ export class ContactComponent implements OnInit {
       return contact.firstName.toLowerCase() === params.toLowerCase(); // will return only things that match, case doesnt matter
     });
   }
+  searchWithCommaSplice() {
+    // let error = false;
+    // const commaIndex = this.name.indexOf(', ');
+
+    // if (this.name === '') {
+    //   this.errorMessage = 'Name must not be empty';
+    //   error = true;
+    // } else if (commaIndex === -1) {
+    //   this.errorMessage = 'Name must have a comma!';
+    //   error = true;
+    // }
+
+    // if (!error) {
+    //   const firstName = this.name.slice(commaIndex + 1, this.name.length);
+    //   const lastName = this.name.slice(0, commaIndex);
+    //   const fullName = firstName + ' ' + lastName;                           // this is what we want for comma splicing
+    //   const calculation = this.calculate();
+    //   this.confirmMessage = `Thank you for your order ${fullName}. Your subtotal is: $${calculation.total - calculation.taxAmount}.
+    //   Your tax amount is: $${calculation.taxAmount}. Your grand total is: $${calculation.total}.`;
+    //   this.flexModal.openDialog('confirm-modal');
+    // } else {
+    //   this.flexModal.openDialog('error-modal');
+    // }
+
+  }
 }
